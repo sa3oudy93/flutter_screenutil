@@ -153,9 +153,11 @@ class ScreenUtil {
 
   /// Initializing for widget test.
   static void initForTest(BuildContext context) {
+    Size designSize = Size(390, 860);
+    _instance._uiSize = designSize;
     return configure(
       data: MediaQuery.maybeOf(context),
-      designSize: Size(390, 860),
+      designSize: designSize,
       splitScreenMode: false,
       minTextAdapt: false,
       fontSizeResolver: FontSizeResolvers.width,
