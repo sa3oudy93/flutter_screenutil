@@ -19,7 +19,7 @@ class ScreenUtil {
 
   /// UI设计中手机尺寸 , dp
   /// Size of the phone in UI Design , dp
-  late Size _uiSize;
+  late Size _uiSize = defaultSize;
 
   ///屏幕方向
   late Orientation _orientation;
@@ -154,7 +154,7 @@ class ScreenUtil {
   /// Initializing for widget test.
   static void initForTest(BuildContext context) {
     Size designSize = Size(390, 860);
-    _instance._uiSize = designSize;
+    _uiSize = designSize;
     return configure(
       data: MediaQuery.maybeOf(context),
       designSize: designSize,
