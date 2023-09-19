@@ -22,9 +22,9 @@ class ScreenUtil {
   ///屏幕方向
   late Orientation _orientation;
 
-  late bool _minTextAdapt;
+  bool _minTextAdapt = false;
   late MediaQueryData _data;
-  late bool _splitScreenMode;
+  bool _splitScreenMode = false;
   FontSizeResolver? fontSizeResolver;
 
   ScreenUtil._();
