@@ -23,7 +23,7 @@ class ScreenUtil {
   late Orientation _orientation;
 
   bool _minTextAdapt = false;
-  late MediaQueryData _data;
+  MediaQueryData _data = MediaQueryData();
   bool _splitScreenMode = false;
   FontSizeResolver? fontSizeResolver;
 
